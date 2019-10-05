@@ -1,7 +1,5 @@
 FROM node:12
 
-FROM node:12
-
 # https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md#running-puppeteer-in-docker
 RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \
     && sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list' \
@@ -14,6 +12,7 @@ RUN groupadd -r pptruser && useradd -r -g pptruser -G audio,video pptruser && mk
 RUN mkdir -p /usr/src/app
 COPY yarn.lock /usr/src/app/
 COPY package.json /usr/src/app/
+WORKDIR /usr/src/app
 RUN yarn install --frozen-lockfile
 RUN chown -R pptruser:pptruser /usr/src/app
 USER pptruser

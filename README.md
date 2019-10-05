@@ -1,9 +1,9 @@
 # puppeteer-event-popper
-GitHub Action to use Puppeteer to publish event description to Eventpop
+GitHub Action to use Puppeteer to publish event description to Eventpop through [event-popper](https://github.com/dtinth/event-popper).
 
 ## How to use
 
-1. Deploy an instance of ![event-popper](https://github.com/dtinth/event-popper) to Netlify.
+1. Deploy an instance of [event-popper](https://github.com/dtinth/event-popper) to Netlify.
 
    This gives you a REST API that you can use to deploy event descriptions to Eventpop,
    so that you don’t need to put in your Eventpop credentials in your CD pipeline.

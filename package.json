@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "axios": "^0.19.0",
+    "puppeteer": "^1.20.0",
+    "tkt": "^2.0.0"
+  }
+}

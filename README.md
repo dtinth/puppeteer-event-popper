@@ -1,6 +1,12 @@
 # puppeteer-event-popper
 GitHub Action to use Puppeteer to publish event description to Eventpop through [event-popper](https://github.com/dtinth/event-popper).
 
+## Examples
+
+`puppeteer-event-popper` is used to deploy the event description for the following events:
+
+- [Hacktoberfest BKK 2019](https://www.eventpop.me/e/7013) ([source](https://github.com/dtinth/hacktoberfest-open-hack-day-bkk-2019))
+
 ## How to use
 
 1. Deploy an instance of [event-popper](https://github.com/dtinth/event-popper) to Netlify.
